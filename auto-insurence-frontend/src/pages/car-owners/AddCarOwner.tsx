@@ -16,11 +16,11 @@ const AddCarOwner = () => {
             return;
         }
         httpModule.post("/CarOwner/create", carOwner)
-        .then(response => redirect("/CarOwners"))
-        .catch(error => {
-            alert("Error");
-            console.log(error);
-        })
+            .then(response => redirect("/CarOwners"))
+            .catch(error => {
+                alert("Error");
+                console.log(error);
+            })
 
     };
     const handleClickBackBtn = () => {
