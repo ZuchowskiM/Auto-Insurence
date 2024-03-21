@@ -1,8 +1,8 @@
-import axios from "axios"
-import { baseUrl } from "../constants/url.constants"
+import axios from "axios";
+import { baseUrl } from "../constants/url.constants";
 
 const httpModule = axios.create({
-    baseURL: baseUrl,
-})
+  baseURL: baseUrl,
+});
 
-export default httpModule
+export default httpModule;

@@ -1,9 +1,7 @@
-import "./Cars.scss"
+import "./Cars.scss";
 
 const Cars = () => {
-  return (
-    <div>Cars</div>
-  )
-}
+  return <div>Cars</div>;
+};
 
-export default Cars
+export default Cars;

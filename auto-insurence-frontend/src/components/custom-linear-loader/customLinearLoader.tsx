@@ -1,12 +1,12 @@
-import Box from '@mui/material/Box';
-import LinearProgress from '@mui/material/LinearProgress';
+import Box from "@mui/material/Box";
+import LinearProgress from "@mui/material/LinearProgress";
 
 const CustomLinearLoader = () => {
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: "100%" }}>
       <LinearProgress />
     </Box>
-  )
-}
+  );
+};
 
 export default CustomLinearLoader;
