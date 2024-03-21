@@ -1,4 +1,4 @@
-@import "../mixin";
+@import "../../mixin";
 
 .navbar {
     @include d-flex(row, space-between, center);
