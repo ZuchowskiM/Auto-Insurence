@@ -5,6 +5,11 @@ export interface ICarOwner {
     createdAt: string;
 }
 
+export interface ICreateCarOwnerDto {
+    name: string;
+    surname: string;
+}
+
 // "id": 1,
 //     "createdAt": "2024-03-20T20:55:32.3109588",
 //     "name": "Marek",

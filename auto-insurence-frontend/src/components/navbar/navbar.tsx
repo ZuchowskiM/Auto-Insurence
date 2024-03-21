@@ -7,8 +7,8 @@ import { useContext, useState } from "react"
 
 const links = [
     { href: "/", label: "Home", },
-    { href: "/cars", label: "Cars", },
-    { href: "/carowners", label: "Car Owners", },
+    { href: "/Cars", label: "Cars", },
+    { href: "/CarOwners", label: "Car Owners", },
 ]
 
 const Navbar = () => {

@@ -30,7 +30,7 @@ const CarOwners = () => {
         <div className='content car-owners'>
             <div className='heading'>
                 <h2>Car Owners</h2>
-                <Button variant="outlined" onClick={() => redirect("/CarOwner/add")}>
+                <Button variant="outlined" onClick={() => redirect("/CarOwners/add")}>
                     <Add />
                 </Button>
             </div>
