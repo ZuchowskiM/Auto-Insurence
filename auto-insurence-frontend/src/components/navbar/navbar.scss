@@ -52,7 +52,7 @@
     .menu {
       @include d-flex(column, flex-start, center);
       color: #fff;
-      background-color: rgb(78, 76, 76);
+      background-color: var(--blue);
       width: 240px;
       height: 100vh;
       position: fixed;
@@ -63,6 +63,10 @@
 
       &.open {
         left: 0;
+      }
+
+      a {
+        color: #FFF;
       }
 
       ul {
@@ -89,7 +93,7 @@
       cursor: pointer;
 
       svg {
-        color: var(--blue);
+        color: var(--gold);
       }
     }
   }
