@@ -94,7 +94,7 @@ const AddCar = () => {
           >
             {carOwners.map((owner) => (
               <MenuItem key={owner.id} value={owner.id}>
-                {owner.name + owner.surname}
+                {owner.name + " " + owner.surname}
               </MenuItem>
             ))}
           </Select>
