@@ -30,15 +30,15 @@ const Cars = () => {
   return (
     <div className="content cars">
       <div className="heading">
-        <h2>Car Owners</h2>
-        <Button variant="outlined" onClick={() => redirect("/Car/add")}>
+        <h2>Cars</h2>
+        <Button variant="outlined" onClick={() => redirect("/Cars/add")}>
           <Add />
         </Button>
       </div>
       {loading ? (
         <CircularProgress size={100} />
       ) : cars.length === 0 ? (
-        <h1>No car owners</h1>
+        <h1>No cars</h1>
       ) : (
         <CarGrid data={cars} />
       )}

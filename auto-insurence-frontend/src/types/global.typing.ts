@@ -21,7 +21,6 @@ export interface ICar {
 }
 
 export interface ICreateCar {
-  id: number;
   brand: string;
   model: string;
   productionYear: number;
