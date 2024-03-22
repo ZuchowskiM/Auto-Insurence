@@ -1,0 +1,19 @@
+@import "../../mixin";
+
+.cars {
+  .heading {
+    @include d-flex(row, space-between, center);
+    width: 100%;
+  }
+}
+
+.add-car {
+  @include d-flex(column, flex-start, center);
+  width: 500px;
+  max-width: 100%;
+  gap: 1rem;
+
+  * {
+    color: var(--text-color);
+  }
+}

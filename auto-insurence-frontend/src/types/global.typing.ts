@@ -9,3 +9,21 @@ export interface ICreateCarOwnerDto {
   name: string;
   surname: string;
 }
+
+export interface ICar {
+  id: number;
+  createdAt: string;
+  brand: string;
+  model: string;
+  productionYear: number;
+  ownerName: string;
+  carOwnerId: number;
+}
+
+export interface ICreateCar {
+  id: number;
+  brand: string;
+  model: string;
+  productionYear: number;
+  carOwnerId: number;
+}
