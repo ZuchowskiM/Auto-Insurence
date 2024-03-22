@@ -44,7 +44,7 @@ const Navbar = () => {
           selected={darkMode}
           onChange={toggleDarkMode}
         >
-          {{ darkMode } ? <DarkMode /> : <LightMode />}
+          {darkMode ? <LightMode /> : <DarkMode />}
         </ToggleButton>
       </div>
     </div>

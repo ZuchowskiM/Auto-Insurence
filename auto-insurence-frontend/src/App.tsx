@@ -10,7 +10,6 @@ const Cars = lazy(() => import("./pages/cars/Cars"));
 const AddCarOwner = lazy(() => import("./pages/car-owners/AddCarOwner"));
 const AddCar = lazy(() => import("./pages/cars/AddCar"));
 
-
 const App = () => {
   const { darkMode } = useContext(ThemeContext);
   const appStyles = darkMode ? "app dark" : "app";
