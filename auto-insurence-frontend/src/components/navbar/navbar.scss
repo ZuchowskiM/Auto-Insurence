@@ -3,13 +3,17 @@
 .navbar {
   @include d-flex(row, space-between, center);
   color: #fff;
-  background-color: rgba(116, 116, 116);
+  background-color: var(--blue);
   width: 100%;
   height: 60px;
   padding: 0 2rem;
 
   .brand {
     flex: 1;
+  }
+  
+  a {
+    color: #FFF;
   }
 
   .menu {

@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="brand">
-        <span>Car insurence</span>
+        <Link to="/">AUTO-SEC</Link>
       </div>
       <div className={menuStyles}>
         <ul>
