@@ -9,8 +9,8 @@ const AddCar = () => {
     const [car, setCar] = useState<ICreateCar>({
         brand: "",
         model: "",
-        productionYear: 2000,
-        carOwnerId: 0,
+        productionYear: 0,
+        carOwnerId: -1,
     });
     const [carOwners, setCarOwners] = useState<ICarOwner[]>([]);
     const redirect = useNavigate();
@@ -28,8 +28,12 @@ const AddCar = () => {
     }, []);
 
     const handleClickSaveBtn = () => {
-        if (car.brand === "" || car.model === "") {
+        if (car.brand === "" || car.model === "" || car.carOwnerId === -1) {
             alert("Fill all fields");
+            return;
+        }
+        if (car.productionYear < 1900) {
+            alert("Please fill out proper production year");
             return;
         }
         httpModule
@@ -63,6 +67,18 @@ const AddCar = () => {
                     onChange={(e) =>
                         setCar({ ...car, model: e.target.value })
                     }
+                />
+                <TextField
+                    autoComplete="off"
+                    label="Production year"
+                    variant="outlined"
+                    //value={car.productionYear}
+                    inputProps={{pattern: "[0-9]"}}
+                    onChange={(e) => {
+                        if (!isNaN(parseInt(e.target.value))) {
+                            setCar({ ...car, productionYear: parseInt(e.target.value, 10) })
+                        }
+                    }}
                 />
                 <FormControl fullWidth>
                     <InputLabel>Car owner</InputLabel>
